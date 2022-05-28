@@ -14,33 +14,19 @@ import numpy as np
 def Get_Month_avg_plot():
     # 設定顏色，不然會重複
     cnames = [
-        # '#00FFFF',
-        '#7FFFD4',
-        '#0000FF',
-        '#8A2BE2',
-        '#A52A2A',
-        '#5F9EA0',
-        '#D2691E',
-        '#FF7F50',
-        '#DC143C',
-        '#00FFFF',
-        '#00008B',
-        # '#808080',
-        '#008000',
-        '#90EE90',
-        '#00FF00',
-        '#32CD32',
-        '#FAF0E6',
-        '#FF00FF',
-        '#000080',
-        '#FFA500',
-        '#FFC0CB',
-        '#800080',
-        '#FF0000',
-        '#2E8B57',
-        '#008080',
-        '#EE82EE',
-        '#FFFF00'
+        "#03071e",
+        "#370617",
+        "#6a040f",
+        "#9d0208",
+        "#d00000",
+        "#dc2f02",
+        "#e85d04",
+        "#f48c06",
+        "#faa307",
+        "#ffba08",
+        "#76c893",
+        "#168aad",
+        "#184e77"
     ]
 
     Year_Month_avg = []
@@ -108,7 +94,8 @@ def Get_Month_avg_plot():
 
     plt.xticks(np.arange(min(np.arange(1, 13, 1)), max(np.arange(1, 13, 1))+1, 1.0))
     plt.grid(True,linestyle = "--",color = 'gray' ,linewidth = '0.5',axis='both')
-    plt.legend()
+    plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left') # handles=[line_a, line_b, line_c]
+    plt.tight_layout()
     plt.savefig(f"./pic/金門氣象站測站歷年每月月平均變化圖.png", dpi=300)
     plt.clf()
     print(f"金門：金門氣象站測站歷年每月月平均變化圖 已下載完成")
