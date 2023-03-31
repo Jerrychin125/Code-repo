@@ -5,4 +5,4 @@
 [副程式：Function.py](./Kinmen_Function.py)
 
 ## 下載Line貼圖
-[程式碼：getLineSticker.py](./getLineSticker.py)
+[程式碼：GetLineSticker.py](./getLineSticker.py)
